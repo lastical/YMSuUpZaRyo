@@ -13,11 +13,12 @@ st.write("선택된 옵션: ",selected_option)
 fruit = st.selectbox("과일을 선택하세요", ["사과", "바나나", "오렌지"])
 st.write("선택한 과일: ",fruit)
 
-planets = st.multiselect("행성을 선택하세요", ["목성", "화성", "해왕성"])
+planets = st.multiselect("과일을 선택하세요(중복)", ["사과", "배", "딸기"])
 st.write("선택한 행성: ", planets)
+st.write(f"선택한 생성 : {planets}")
 
 number = st.slider("숫자를 선택하세요", 0, 50)
 st.write("선택된 숫자: ", number)
 
-rating = st.select_slider("평가를 선택하세요", ["나쁨", "보통", "좋음", "최고"])
+rating = st.select_slider("평가를 선택하세요", ["나쁨", "보통", "좋음", "매우좋음"])
 st.write("선택한 평가: ", rating)
